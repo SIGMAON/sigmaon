@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>SIGMAOn - Sistema de Informação Geográfica para Monitoramento de Alagamentos On-line</title>
+        <h:outputStylesheet name="/style/style.css" />
+    </h:head>
+    <h:body>
+        <div id="content">
+            
+            <ui:insert name="corpo"/>        
+            
+            <h:form>
+                <p:panel styleClass="rodape" header="SIGMAOn - Sistema de Informação Geográfica para Monitoramento de Alagamentos On-line">                    
+                    
+                    <div id="divRodapePaginaTemplateUDESC" style="float: left">
+                        <div>Desenvolvido por:</div>
+                        <a href="http://www.udesc.br"><h:graphicImage name="image/logo_udesc.jpg"  alt="Universidade do Estado de Santa Catarina" style="border:none"/></a>
+                        <a href="http://www.ceavi.udesc.br"><h:graphicImage name="image/logo_ceavi.jpg"  alt="Centro de Educação Superior do Alto Vale do Itajaí" style="border:none"/></a>
+                    </div>
+
+                    <div id="separator" style="float: left; background-color: black; width: 1px; height: 110px; margin-left: 10px; margin-right: 10px"/>
+
+                    <div id="divRodapePaginaTemplateApoiadores" style="float: left">
+                        <div>Apoiadores:</div>
+                        <a href="http://www.fapesc.sc.gov.br/"><h:graphicImage name="image/logo_fapesc.jpg"  alt="Fundação de Amparo à Pesquisa e Inovação do Estado de Santa Catarina" style="border:none"/></a>
+                    </div>
+                    
+                </p:panel>
+            </h:form>
+        </div>
+    </h:body>
+</html>

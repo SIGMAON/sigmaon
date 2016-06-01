@@ -1,0 +1,110 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+
+    background-image: linear-gradient(bottom, #195CCF 14%, #4AA4E0 53%);
+    background-image: -o-linear-gradient(bottom, #195CCF 14%, #4AA4E0 53%);
+    background-image: -moz-linear-gradient(bottom, #195CCF 14%, #4AA4E0 53%);
+    background-image: -webkit-linear-gradient(bottom, #195CCF 14%, #4AA4E0 53%);
+    background-image: -ms-linear-gradient(bottom, #195CCF 14%, #4AA4E0 53%);
+
+    background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0.14, #195CCF),
+            color-stop(0.53, #4AA4E0)
+    );       
+    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+.rodape {
+    height: 155px; 
+    margin-top: 5px;
+    font-size: 10px !important;
+    width: 100%;
+    -moz-box-shadow:    inset 0 0 3px #4D8DEE;
+    -webkit-box-shadow: inset 0 0 3px #4D8DEE;
+    box-shadow:         inset 0 0 3px #4D8DEE;
+    padding: 9px !important;
+}
+
+.ui-widget-content{
+    font-size: 12px;
+}
+
+.tbFormulario tr td{
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    font-size: 12px;
+}
+
+table, table tr, table td {
+   border: none !important;
+}
+
+#content {
+    width: 90%;                /* para navegadores que não suportam calc() */
+    width: -webkit-calc(90%);  /* para Chrome */
+    width: -moz-calc(90%);     /* para Firefox */
+    width: calc(90%);          /* para suporte nativo */
+    margin: 0 auto;
+    position: relative;
+    top: 12px;    
+    right: 12px;
+    border: none;
+    display: table;
+}
+
+#divSimulacao{
+    -moz-box-shadow:    inset 0 0 10px #4D8DEE;
+    -webkit-box-shadow: inset 0 0 10px #4D8DEE;
+    box-shadow:         inset 0 0 10px #4D8DEE;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#topSimulacao {    
+    -moz-box-shadow:    1px 1px 5px 2px #ccc;
+    -webkit-box-shadow: 1px 1px 5px 2px #ccc;
+    box-shadow:         1px 1px 5px 2px #ccc;  
+    width: 99%;
+    height: 120px;
+    border-radius: 3px;
+    padding: 6px;
+    margin-bottom: 10px;
+    display: table;
+}
+
+#topLeftSimulacao {
+    width: 23%;
+    float: left;
+}
+
+#topCenterSimulacao {
+    width: 22%;
+    float: left;        
+}
+
+#mapaSimulacao {
+    -moz-box-shadow:    1px 1px 5px 2px #ccc;
+    -webkit-box-shadow: 1px 1px 5px 2px #ccc;
+    box-shadow:         1px 1px 5px 2px #ccc;  
+    height: 560px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+#slider {
+    width: 100%;  
+}
