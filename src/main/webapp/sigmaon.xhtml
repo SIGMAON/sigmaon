@@ -14,30 +14,29 @@
                 <div id="topSimulacao">                    
                     <div id="topLeftSimulacao">                                                
                         <p:panelGrid id="panelEstadoCidade" style="width: 100%" styleClass="tbFormulario" columns="2">
-                            <f:facet name="header">Selecione o Estado e a Cidade</f:facet>
+                            <f:facet name="header">#{i18n.sigmaonSelStateCity}</f:facet>
 
                             <p:column>
-                                <!--                                <h:outputLabel value="Estado" for="cbEstado"/>-->
-                                <h:outputText value="#{i18n.teste}"/>
+                                <h:outputLabel value="#{i18n.labelState}" for="cbEstado"/>
                             </p:column>
 
                             <p:column>
-                                <p:selectOneMenu id="cbEstado" 
+                                <p:selectOneMenu id="cbEstado"
                                                  value="#" 
                                                  effect="fade">
-                                    <f:selectItem itemLabel="Selecione" itemValue=""/>
+                                    <f:selectItem itemLabel="#{i18n.labelSelect}" itemValue=""/>
                                 </p:selectOneMenu>
                             </p:column>
 
                             <p:column>
-                                <h:outputLabel value="Cidade " for="cbCidade"/>
+                                <h:outputLabel value="#{i18n.labelCity}" for="cbCidade"/>
                             </p:column>
 
                             <p:column>
                                 <p:selectOneMenu id="cbCidade" 
                                                  value="#" 
                                                  effect="fade">
-                                    <f:selectItem itemLabel="Selecione" itemValue="x"/>
+                                    <f:selectItem itemLabel="#{i18n.labelSelect}" itemValue="x"/>
                                 </p:selectOneMenu>                                
                             </p:column>
                         </p:panelGrid>
@@ -45,9 +44,9 @@
 
                     <div id="topCenterSimulacao">
                         <p:panelGrid id="panelSlider" styleClass="tbFormulario" columns="2" style="width: 100%">
-                            <f:facet name="header">Consulta de pontos atingidos</f:facet>
+                            <f:facet name="header">#{i18n.sigmaonSelLevel}</f:facet>
 
-                            <h:outputText value="Nível do rio (m): " style="float: right"/>
+                            <h:outputText value="#{i18n.sigmaonRiverLevel}" style="float: right"/>
                             <h:inputText id="mostrar" value="0.0" 
                                          style="font-weight: bold; border: none !important; font-size: 30px" 
                                          size="3" 
@@ -69,7 +68,7 @@
                 <div id="mapaSimulacao">
                     <p:gmap id="gmap" center="-27.2175667,-49.6429751" zoom="13" type="HYBRID" style="width:100%;height:560px" model="#{mapaBean.model}"/>
                 </div>
-            </div>     
+            </div>
         </h:form>
     </ui:define>
 </ui:composition>
