@@ -47,22 +47,24 @@
                             <f:facet name="header">#{i18n.sigmaonSelLevel}</f:facet>
 
                             <h:outputText value="#{i18n.sigmaonRiverLevel}" style="float: right"/>
-                            <h:inputText id="mostrar" value="0.0" 
+                            <h:inputText id="mostrar" value="#{mapaBean.nivelRef}" 
                                          style="font-weight: bold; border: none !important; font-size: 30px" 
-                                         size="3" 
-                                         />
-                            <h:inputHidden id="escondido" value="00" />
+                                         size="3" />
                         </p:panelGrid>       
                         <div id="slider">
                             <p:slider id="sliderCota" 
-                                      widgetVar="wSliderCota"
                                       style="width:85%; margin-left: 8% "                                      
-                                      onSlide="calcularNivelRio()"  
-                                      onSlideEnd="statusDialog.show()"
-                                      for="escondido" 
-                                      minValue="0" maxValue="250">
+                                      for="mostrar"
+                                      minValue="0" maxValue="2500"
+                                      step="10">
                             </p:slider>
                         </div>
+                        <p:ajaxStatus>
+                            <p:commandButton value="#{i18n.buttonSelect}" 
+                                             action="#{mapaBean.buscarNivel}" 
+                                             style="width:40%; margin-left: 50%; margin-top: 5%; font-size: 12px"
+                                             update="gmap"/>
+                        </p:ajaxStatus>
                     </div>
                 </div>
                 <div id="mapaSimulacao">

@@ -10,12 +10,12 @@
     </h:head>
     <h:body>
         <div id="content">
-            
+
             <ui:insert name="corpo"/>        
-            
+
             <h:form>
                 <p:panel styleClass="rodape" header="#{i18n.templateTitle}">
-                    
+
                     <div id="divRodapePaginaTemplateUDESC" style="float: left">
                         <div>#{i18n.templateDevBy}</div>
                         <a href="http://www.udesc.br"><h:graphicImage name="image/logo_udesc.jpg"  alt="#{i18n.labelExtUDESC}" style="border:none"/></a>
@@ -28,9 +28,15 @@
                         <div>#{i18n.templateHold}</div>
                         <a href="http://www.fapesc.sc.gov.br/"><h:graphicImage name="image/logo_fapesc.jpg"  alt="#{i18n.labelExtFAPESC}" style="border:none"/></a>
                     </div>
-                    
+
                 </p:panel>
             </h:form>
+
+            <p:ajaxStatus onstart="PF('statusDialog').show()" onsuccess="PF('statusDialog').hide()" />
+
+            <p:dialog widgetVar="statusDialog" modal="true" draggable="false" closable="false" resizable="false" showHeader="false">
+                <p:graphicImage name="image/ajaxloadingbar.gif" />
+            </p:dialog>
         </div>
     </h:body>
 </html>
