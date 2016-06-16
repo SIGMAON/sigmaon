@@ -4,7 +4,6 @@ import br.udesc.ceavi.sigmaon.util.PropertiesLoader;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.Properties;
 
 public class JDBCInstance {
@@ -37,7 +36,8 @@ public class JDBCInstance {
         return instance;
     }
 
-    public Statement getStatement() throws SQLException {
-        return conn.createStatement();
+    public Connection getConnection() {
+        return conn;
     }
+
 }

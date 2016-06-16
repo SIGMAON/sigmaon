@@ -1,9 +1,9 @@
 package br.udesc.ceavi.sigmaon.dao.nivel;
 
-import org.primefaces.model.map.Polygon;
+import br.udesc.ceavi.sigmaon.model.wrapper.Nivel;
 
 public interface NivelDAO {
-    
-    public Polygon consultaNivel(double nivel);
-    
+
+    public Nivel consultaNivel(int nivel);
+
 }
