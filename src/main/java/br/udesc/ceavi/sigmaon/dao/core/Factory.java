@@ -1,5 +1,10 @@
 package br.udesc.ceavi.sigmaon.dao.core;
 
+/**
+ * Enum de conexoes
+ *
+ * @author Weverton Otoni
+ */
 public enum Factory {
 
     JDBC(1);
