@@ -3,4 +3,12 @@
 *.war
 faces-config.NavData
 nb-configuration.xml
-target/
+target/classes/
+target/endorsed/
+target/generated-sources/
+target/javadoc-bundle-options/
+target/maven-archiver/
+target/maven-status/
+target/sigmaon-1.0/
+target/surefire/
+target/test-classes/

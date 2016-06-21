@@ -4,6 +4,10 @@ import br.udesc.ceavi.sigmaon.dao.core.DAOFactory;
 import br.udesc.ceavi.sigmaon.dao.nivel.JDBCNivelDAO;
 import br.udesc.ceavi.sigmaon.dao.nivel.NivelDAO;
 
+/**
+ *
+ * @author Weverton Otoni
+ */
 public class JDBCDAOFactory extends DAOFactory {
 
     @Override

@@ -1,0 +1,6 @@
+br.udesc.ceavi.sigmaon.bean
+br.udesc.ceavi.sigmaon.dao.core
+br.udesc.ceavi.sigmaon.dao.jdbc
+br.udesc.ceavi.sigmaon.dao.nivel
+br.udesc.ceavi.sigmaon.model.wrapper
+br.udesc.ceavi.sigmaon.util

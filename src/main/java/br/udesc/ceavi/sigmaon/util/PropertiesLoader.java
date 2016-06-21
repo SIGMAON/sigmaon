@@ -4,6 +4,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+/**
+ * Carrega arquivos properties. Centraliza a responsabilidade de carregar
+ * arquivos properties.
+ *
+ * @author Weverton Otoni
+ */
 public class PropertiesLoader {
 
     public static final String DATABASE_CONFIG
